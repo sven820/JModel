@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C8DE8DF6319AD85AF88560A /* libPods-JModelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C97957A164D243D99F59D000 /* libPods-JModelTests.a */; };
+		6EDC71EFB29472CEB9F97F3F /* libPods-JModelUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D23CF44F6A6B6DCED696AB39 /* libPods-JModelUITests.a */; };
+		992544A21FFC7D54006A5EB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544A11FFC7D54006A5EB4 /* AppDelegate.m */; };
+		992544A51FFC7D54006A5EB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544A41FFC7D54006A5EB4 /* ViewController.m */; };
+		992544A81FFC7D54006A5EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992544A61FFC7D54006A5EB4 /* Main.storyboard */; };
+		992544AA1FFC7D54006A5EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992544A91FFC7D54006A5EB4 /* Assets.xcassets */; };
+		992544AD1FFC7D54006A5EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992544AB1FFC7D54006A5EB4 /* LaunchScreen.storyboard */; };
+		992544B01FFC7D54006A5EB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544AF1FFC7D54006A5EB4 /* main.m */; };
+		992544BA1FFC7D54006A5EB4 /* JModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544B91FFC7D54006A5EB4 /* JModelTests.m */; };
+		992544C51FFC7D54006A5EB4 /* JModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544C41FFC7D54006A5EB4 /* JModelUITests.m */; };
+		992544E11FFCAAE6006A5EB4 /* DBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544D51FFCAAE6006A5EB4 /* DBModel.m */; };
+		992544E21FFCAAE6006A5EB4 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544D61FFCAAE6006A5EB4 /* DBHelper.m */; };
+		992544E31FFCAAE6006A5EB4 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544D91FFCAAE6006A5EB4 /* DBManager.m */; };
+		992544E41FFCAAE6006A5EB4 /* JDBSQLState.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544DB1FFCAAE6006A5EB4 /* JDBSQLState.m */; };
+		992544E51FFCAAE6006A5EB4 /* JDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544DC1FFCAAE6006A5EB4 /* JDBModel.m */; };
+		992544E61FFCAAE6006A5EB4 /* JDBColumnDes.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544E01FFCAAE6006A5EB4 /* JDBColumnDes.m */; };
+		992544EA1FFCB665006A5EB4 /* UserDbModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544E91FFCB665006A5EB4 /* UserDbModel.m */; };
+		992544ED1FFCB676006A5EB4 /* PublicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544EC1FFCB676006A5EB4 /* PublicModel.m */; };
+		992545341FFF2961006A5EB4 /* TestDbModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 992545331FFF2961006A5EB4 /* TestDbModel.m */; };
+		9925453A1FFFEBD5006A5EB4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 992545391FFFEBD5006A5EB4 /* libsqlite3.tbd */; };
+		F5535C2180B72ED47F91E98A /* libPods-JModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5948B39BC3FDBE2D19575C /* libPods-JModel.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		992544B61FFC7D54006A5EB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992544951FFC7D53006A5EB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9925449C1FFC7D54006A5EB4;
+			remoteInfo = JModel;
+		};
+		992544C11FFC7D54006A5EB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992544951FFC7D53006A5EB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9925449C1FFC7D54006A5EB4;
+			remoteInfo = JModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		037A9A520D735B887DC33868 /* Pods-JModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JModelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JModelTests/Pods-JModelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		15A31644E1273457558DBB86 /* Pods-JModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-JModel/Pods-JModel.release.xcconfig"; sourceTree = "<group>"; };
+		311224F489EB99CEA4B3D080 /* Pods-JModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JModel/Pods-JModel.debug.xcconfig"; sourceTree = "<group>"; };
+		4B7B6747BBD71043BD65AFCF /* Pods-JModelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JModelUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JModelUITests/Pods-JModelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A2440C381D9ADABCBE298E3 /* Pods-JModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JModelTests/Pods-JModelTests.release.xcconfig"; sourceTree = "<group>"; };
+		9925449D1FFC7D54006A5EB4 /* JModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		992544A01FFC7D54006A5EB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		992544A11FFC7D54006A5EB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		992544A31FFC7D54006A5EB4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		992544A41FFC7D54006A5EB4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		992544A71FFC7D54006A5EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		992544A91FFC7D54006A5EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		992544AC1FFC7D54006A5EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		992544AE1FFC7D54006A5EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992544AF1FFC7D54006A5EB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		992544B51FFC7D54006A5EB4 /* JModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		992544B91FFC7D54006A5EB4 /* JModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JModelTests.m; sourceTree = "<group>"; };
+		992544BB1FFC7D54006A5EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992544C01FFC7D54006A5EB4 /* JModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		992544C41FFC7D54006A5EB4 /* JModelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JModelUITests.m; sourceTree = "<group>"; };
+		992544C61FFC7D54006A5EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992544D31FFCAAE6006A5EB4 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		992544D41FFCAAE6006A5EB4 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		992544D51FFCAAE6006A5EB4 /* DBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBModel.m; sourceTree = "<group>"; };
+		992544D61FFCAAE6006A5EB4 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		992544D71FFCAAE6006A5EB4 /* DBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBModel.h; sourceTree = "<group>"; };
+		992544D91FFCAAE6006A5EB4 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		992544DB1FFCAAE6006A5EB4 /* JDBSQLState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBSQLState.m; sourceTree = "<group>"; };
+		992544DC1FFCAAE6006A5EB4 /* JDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBModel.m; sourceTree = "<group>"; };
+		992544DD1FFCAAE6006A5EB4 /* JDBColumnDes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBColumnDes.h; sourceTree = "<group>"; };
+		992544DE1FFCAAE6006A5EB4 /* JDBSQLState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBSQLState.h; sourceTree = "<group>"; };
+		992544DF1FFCAAE6006A5EB4 /* JDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBModel.h; sourceTree = "<group>"; };
+		992544E01FFCAAE6006A5EB4 /* JDBColumnDes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBColumnDes.m; sourceTree = "<group>"; };
+		992544E81FFCB665006A5EB4 /* UserDbModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDbModel.h; sourceTree = "<group>"; };
+		992544E91FFCB665006A5EB4 /* UserDbModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDbModel.m; sourceTree = "<group>"; };
+		992544EB1FFCB676006A5EB4 /* PublicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicModel.h; sourceTree = "<group>"; };
+		992544EC1FFCB676006A5EB4 /* PublicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicModel.m; sourceTree = "<group>"; };
+		992545321FFF2961006A5EB4 /* TestDbModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDbModel.h; sourceTree = "<group>"; };
+		992545331FFF2961006A5EB4 /* TestDbModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDbModel.m; sourceTree = "<group>"; };
+		992545371FFFE72A006A5EB4 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		992545391FFFEBD5006A5EB4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C114EDBF4AC886A159D755CB /* Pods-JModelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JModelUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JModelUITests/Pods-JModelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C97957A164D243D99F59D000 /* libPods-JModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5948B39BC3FDBE2D19575C /* libPods-JModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23CF44F6A6B6DCED696AB39 /* libPods-JModelUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JModelUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9925449A1FFC7D54006A5EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9925453A1FFFEBD5006A5EB4 /* libsqlite3.tbd in Frameworks */,
+				F5535C2180B72ED47F91E98A /* libPods-JModel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992544B21FFC7D54006A5EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8DE8DF6319AD85AF88560A /* libPods-JModelTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992544BD1FFC7D54006A5EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EDC71EFB29472CEB9F97F3F /* libPods-JModelUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B6CACC6E55BE5CD834F8369 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				311224F489EB99CEA4B3D080 /* Pods-JModel.debug.xcconfig */,
+				15A31644E1273457558DBB86 /* Pods-JModel.release.xcconfig */,
+				037A9A520D735B887DC33868 /* Pods-JModelTests.debug.xcconfig */,
+				8A2440C381D9ADABCBE298E3 /* Pods-JModelTests.release.xcconfig */,
+				C114EDBF4AC886A159D755CB /* Pods-JModelUITests.debug.xcconfig */,
+				4B7B6747BBD71043BD65AFCF /* Pods-JModelUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		992544941FFC7D53006A5EB4 = {
+			isa = PBXGroup;
+			children = (
+				9925449F1FFC7D54006A5EB4 /* JModel */,
+				992544B81FFC7D54006A5EB4 /* JModelTests */,
+				992544C31FFC7D54006A5EB4 /* JModelUITests */,
+				9925449E1FFC7D54006A5EB4 /* Products */,
+				4B6CACC6E55BE5CD834F8369 /* Pods */,
+				F66CD88BC752E5C3C3FB2C89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9925449E1FFC7D54006A5EB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9925449D1FFC7D54006A5EB4 /* JModel.app */,
+				992544B51FFC7D54006A5EB4 /* JModelTests.xctest */,
+				992544C01FFC7D54006A5EB4 /* JModelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9925449F1FFC7D54006A5EB4 /* JModel */ = {
+			isa = PBXGroup;
+			children = (
+				992544E71FFCB64A006A5EB4 /* demo */,
+				992544D21FFCAADA006A5EB4 /* JModel */,
+				992544A01FFC7D54006A5EB4 /* AppDelegate.h */,
+				992544A11FFC7D54006A5EB4 /* AppDelegate.m */,
+				992544A31FFC7D54006A5EB4 /* ViewController.h */,
+				992544A41FFC7D54006A5EB4 /* ViewController.m */,
+				992545321FFF2961006A5EB4 /* TestDbModel.h */,
+				992545331FFF2961006A5EB4 /* TestDbModel.m */,
+				992544A61FFC7D54006A5EB4 /* Main.storyboard */,
+				992544A91FFC7D54006A5EB4 /* Assets.xcassets */,
+				992544AB1FFC7D54006A5EB4 /* LaunchScreen.storyboard */,
+				992544AE1FFC7D54006A5EB4 /* Info.plist */,
+				992544AF1FFC7D54006A5EB4 /* main.m */,
+			);
+			path = JModel;
+			sourceTree = "<group>";
+		};
+		992544B81FFC7D54006A5EB4 /* JModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				992544B91FFC7D54006A5EB4 /* JModelTests.m */,
+				992544BB1FFC7D54006A5EB4 /* Info.plist */,
+			);
+			path = JModelTests;
+			sourceTree = "<group>";
+		};
+		992544C31FFC7D54006A5EB4 /* JModelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				992544C41FFC7D54006A5EB4 /* JModelUITests.m */,
+				992544C61FFC7D54006A5EB4 /* Info.plist */,
+			);
+			path = JModelUITests;
+			sourceTree = "<group>";
+		};
+		992544D21FFCAADA006A5EB4 /* JModel */ = {
+			isa = PBXGroup;
+			children = (
+				992544DA1FFCAAE6006A5EB4 /* DBModel */,
+				992544D41FFCAAE6006A5EB4 /* DBHelper.h */,
+				992544D61FFCAAE6006A5EB4 /* DBHelper.m */,
+				992544D31FFCAAE6006A5EB4 /* DBManager.h */,
+				992544D91FFCAAE6006A5EB4 /* DBManager.m */,
+				992544D71FFCAAE6006A5EB4 /* DBModel.h */,
+				992544D51FFCAAE6006A5EB4 /* DBModel.m */,
+			);
+			path = JModel;
+			sourceTree = "<group>";
+		};
+		992544DA1FFCAAE6006A5EB4 /* DBModel */ = {
+			isa = PBXGroup;
+			children = (
+				992544DE1FFCAAE6006A5EB4 /* JDBSQLState.h */,
+				992544DB1FFCAAE6006A5EB4 /* JDBSQLState.m */,
+				992544DF1FFCAAE6006A5EB4 /* JDBModel.h */,
+				992544DC1FFCAAE6006A5EB4 /* JDBModel.m */,
+				992544DD1FFCAAE6006A5EB4 /* JDBColumnDes.h */,
+				992544E01FFCAAE6006A5EB4 /* JDBColumnDes.m */,
+			);
+			path = DBModel;
+			sourceTree = "<group>";
+		};
+		992544E71FFCB64A006A5EB4 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				992544E81FFCB665006A5EB4 /* UserDbModel.h */,
+				992544E91FFCB665006A5EB4 /* UserDbModel.m */,
+				992544EB1FFCB676006A5EB4 /* PublicModel.h */,
+				992544EC1FFCB676006A5EB4 /* PublicModel.m */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		F66CD88BC752E5C3C3FB2C89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				992545391FFFEBD5006A5EB4 /* libsqlite3.tbd */,
+				992545371FFFE72A006A5EB4 /* libsqlite3.0.tbd */,
+				CD5948B39BC3FDBE2D19575C /* libPods-JModel.a */,
+				C97957A164D243D99F59D000 /* libPods-JModelTests.a */,
+				D23CF44F6A6B6DCED696AB39 /* libPods-JModelUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9925449C1FFC7D54006A5EB4 /* JModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992544C91FFC7D54006A5EB4 /* Build configuration list for PBXNativeTarget "JModel" */;
+			buildPhases = (
+				B39B8E9017F162B645CC95BC /* [CP] Check Pods Manifest.lock */,
+				992544991FFC7D54006A5EB4 /* Sources */,
+				9925449A1FFC7D54006A5EB4 /* Frameworks */,
+				9925449B1FFC7D54006A5EB4 /* Resources */,
+				1720138D890647745BC379AA /* [CP] Embed Pods Frameworks */,
+				394E0DF68D55F1CB8A226ED6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JModel;
+			productName = JModel;
+			productReference = 9925449D1FFC7D54006A5EB4 /* JModel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		992544B41FFC7D54006A5EB4 /* JModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992544CC1FFC7D54006A5EB4 /* Build configuration list for PBXNativeTarget "JModelTests" */;
+			buildPhases = (
+				8E948C5C1659C702732F5738 /* [CP] Check Pods Manifest.lock */,
+				992544B11FFC7D54006A5EB4 /* Sources */,
+				992544B21FFC7D54006A5EB4 /* Frameworks */,
+				992544B31FFC7D54006A5EB4 /* Resources */,
+				38B8EDE4B965B442FC1A5267 /* [CP] Embed Pods Frameworks */,
+				897FD5C19BEFEB779763AD38 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992544B71FFC7D54006A5EB4 /* PBXTargetDependency */,
+			);
+			name = JModelTests;
+			productName = JModelTests;
+			productReference = 992544B51FFC7D54006A5EB4 /* JModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		992544BF1FFC7D54006A5EB4 /* JModelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992544CF1FFC7D54006A5EB4 /* Build configuration list for PBXNativeTarget "JModelUITests" */;
+			buildPhases = (
+				C2ACEDF52A3B5395CBADC8DC /* [CP] Check Pods Manifest.lock */,
+				992544BC1FFC7D54006A5EB4 /* Sources */,
+				992544BD1FFC7D54006A5EB4 /* Frameworks */,
+				992544BE1FFC7D54006A5EB4 /* Resources */,
+				D5F24D4AE9E0BDF01669F0EA /* [CP] Embed Pods Frameworks */,
+				7CFF169FDB0308E06BE440AB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992544C21FFC7D54006A5EB4 /* PBXTargetDependency */,
+			);
+			name = JModelUITests;
+			productName = JModelUITests;
+			productReference = 992544C01FFC7D54006A5EB4 /* JModelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		992544951FFC7D53006A5EB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "靳小飞";
+				TargetAttributes = {
+					9925449C1FFC7D54006A5EB4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					992544B41FFC7D54006A5EB4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9925449C1FFC7D54006A5EB4;
+					};
+					992544BF1FFC7D54006A5EB4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9925449C1FFC7D54006A5EB4;
+					};
+				};
+			};
+			buildConfigurationList = 992544981FFC7D53006A5EB4 /* Build configuration list for PBXProject "JModel" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 992544941FFC7D53006A5EB4;
+			productRefGroup = 9925449E1FFC7D54006A5EB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9925449C1FFC7D54006A5EB4 /* JModel */,
+				992544B41FFC7D54006A5EB4 /* JModelTests */,
+				992544BF1FFC7D54006A5EB4 /* JModelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9925449B1FFC7D54006A5EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992544AD1FFC7D54006A5EB4 /* LaunchScreen.storyboard in Resources */,
+				992544AA1FFC7D54006A5EB4 /* Assets.xcassets in Resources */,
+				992544A81FFC7D54006A5EB4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992544B31FFC7D54006A5EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992544BE1FFC7D54006A5EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1720138D890647745BC379AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JModel/Pods-JModel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38B8EDE4B965B442FC1A5267 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JModelTests/Pods-JModelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		394E0DF68D55F1CB8A226ED6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JModel/Pods-JModel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CFF169FDB0308E06BE440AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JModelUITests/Pods-JModelUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		897FD5C19BEFEB779763AD38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JModelTests/Pods-JModelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E948C5C1659C702732F5738 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JModelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B39B8E9017F162B645CC95BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JModel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2ACEDF52A3B5395CBADC8DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JModelUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5F24D4AE9E0BDF01669F0EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JModelUITests/Pods-JModelUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		992544991FFC7D54006A5EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992544E31FFCAAE6006A5EB4 /* DBManager.m in Sources */,
+				992544E11FFCAAE6006A5EB4 /* DBModel.m in Sources */,
+				992544E21FFCAAE6006A5EB4 /* DBHelper.m in Sources */,
+				992544ED1FFCB676006A5EB4 /* PublicModel.m in Sources */,
+				992544A51FFC7D54006A5EB4 /* ViewController.m in Sources */,
+				992544E51FFCAAE6006A5EB4 /* JDBModel.m in Sources */,
+				992544B01FFC7D54006A5EB4 /* main.m in Sources */,
+				992545341FFF2961006A5EB4 /* TestDbModel.m in Sources */,
+				992544E41FFCAAE6006A5EB4 /* JDBSQLState.m in Sources */,
+				992544E61FFCAAE6006A5EB4 /* JDBColumnDes.m in Sources */,
+				992544EA1FFCB665006A5EB4 /* UserDbModel.m in Sources */,
+				992544A21FFC7D54006A5EB4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992544B11FFC7D54006A5EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992544BA1FFC7D54006A5EB4 /* JModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992544BC1FFC7D54006A5EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992544C51FFC7D54006A5EB4 /* JModelUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		992544B71FFC7D54006A5EB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9925449C1FFC7D54006A5EB4 /* JModel */;
+			targetProxy = 992544B61FFC7D54006A5EB4 /* PBXContainerItemProxy */;
+		};
+		992544C21FFC7D54006A5EB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9925449C1FFC7D54006A5EB4 /* JModel */;
+			targetProxy = 992544C11FFC7D54006A5EB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		992544A61FFC7D54006A5EB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				992544A71FFC7D54006A5EB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		992544AB1FFC7D54006A5EB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				992544AC1FFC7D54006A5EB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		992544C71FFC7D54006A5EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		992544C81FFC7D54006A5EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		992544CA1FFC7D54006A5EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311224F489EB99CEA4B3D080 /* Pods-JModel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUWT78Q42V;
+				INFOPLIST_FILE = JModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaofeijin.own.JModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		992544CB1FFC7D54006A5EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A31644E1273457558DBB86 /* Pods-JModel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUWT78Q42V;
+				INFOPLIST_FILE = JModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaofeijin.own.JModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		992544CD1FFC7D54006A5EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 037A9A520D735B887DC33868 /* Pods-JModelTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUWT78Q42V;
+				INFOPLIST_FILE = JModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaofeijin.own.JModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JModel.app/JModel";
+			};
+			name = Debug;
+		};
+		992544CE1FFC7D54006A5EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2440C381D9ADABCBE298E3 /* Pods-JModelTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUWT78Q42V;
+				INFOPLIST_FILE = JModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaofeijin.own.JModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JModel.app/JModel";
+			};
+			name = Release;
+		};
+		992544D01FFC7D54006A5EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C114EDBF4AC886A159D755CB /* Pods-JModelUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUWT78Q42V;
+				INFOPLIST_FILE = JModelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaofeijin.own.JModelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JModel;
+			};
+			name = Debug;
+		};
+		992544D11FFC7D54006A5EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B7B6747BBD71043BD65AFCF /* Pods-JModelUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUWT78Q42V;
+				INFOPLIST_FILE = JModelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaofeijin.own.JModelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JModel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		992544981FFC7D53006A5EB4 /* Build configuration list for PBXProject "JModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992544C71FFC7D54006A5EB4 /* Debug */,
+				992544C81FFC7D54006A5EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992544C91FFC7D54006A5EB4 /* Build configuration list for PBXNativeTarget "JModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992544CA1FFC7D54006A5EB4 /* Debug */,
+				992544CB1FFC7D54006A5EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992544CC1FFC7D54006A5EB4 /* Build configuration list for PBXNativeTarget "JModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992544CD1FFC7D54006A5EB4 /* Debug */,
+				992544CE1FFC7D54006A5EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992544CF1FFC7D54006A5EB4 /* Build configuration list for PBXNativeTarget "JModelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992544D01FFC7D54006A5EB4 /* Debug */,
+				992544D11FFC7D54006A5EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 992544951FFC7D53006A5EB4 /* Project object */;
+}

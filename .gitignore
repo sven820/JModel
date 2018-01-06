@@ -2,6 +2,14 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+*~
+*.lock
+Pods
+.DS_Store
+*.xcuserstate
+*.xcworkspace
+xcuserdata
+
 ## Build generated
 build/
 DerivedData/
