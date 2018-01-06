@@ -7,8 +7,8 @@ target 'JModel' do
 
   # Pods for JModel
 
-  pod 'FMDB'
-  pod 'YYModel'
+  pod 'FMDB', '~> 2.6.2'
+  pod 'YYModel', '~> 1.0.4'
 
   target 'JModelTests' do
     inherit! :search_paths
