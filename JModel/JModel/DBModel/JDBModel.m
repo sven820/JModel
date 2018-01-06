@@ -631,6 +631,124 @@ static JModelConfig conf = {0};
 {
     return [self findByCriteria:criteria field:nil];
 }
+#pragma mark - async
+- (void)asyncSaveOrUpdate:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self saveOrUpdate];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
+- (void)asyncSaveOrUpdateByColumnName:(NSArray*)columnNames AndColumnValue:(NSArray*)columnValues complete:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self saveOrUpdateByColumnName:columnNames AndColumnValue:columnValues];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
+- (void)asyncSave:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self save];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
++ (void)asyncSaveObjects:(NSArray *)array complete:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self saveObjects:array];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
++ (void)asyncSaveOrUpdateObjects:(NSArray *)array complete:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self saveOrUpdateObjects:array];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
+- (void)asyncUpdate:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self update];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
+- (void)asyncUpdateNonEmptyKeyValues:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self updateNonEmptyKeyValues];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
++ (void)asyncUpdateObjects:(NSArray *)array complete:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self updateObjects:array];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
+- (void)asyncDeleteObject:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self deleteObject];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
++ (void)asyncDeleteObjects:(NSArray *)array complete:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self deleteObjects:array];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
++ (void)asyncDeleteObjectsByCriteria:(NSString *)criteria complete:(void(^)(BOOL res))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL res = [self deleteObjectsByCriteria:criteria];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
++ (void)asyncFindAll:(void(^)(NSArray *))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSArray *res = [self findAll];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
++ (void)asyncFindByCriteria:(NSString *)criteria field:(NSArray *)fields complete:(void(^)(NSArray *))complete
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSArray *res = [self findByCriteria:criteria field:fields];
+        if (complete) {
+            complete(res);
+        }
+    });
+}
 #pragma mark 基本方法
 /**
  *  获取该类的所有属性

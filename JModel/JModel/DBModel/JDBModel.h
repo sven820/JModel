@@ -112,6 +112,21 @@ typedef struct{
 + (NSArray *)findByCriteria:(NSString *)criteria table:(NSString *)tableName;
 + (NSArray *)findByCriteria:(NSString *)criteria field:(NSArray *)fields table:(NSString *)tableName;
 + (BOOL)clearTable:(NSString *)tableName;
+
+#pragma mark - async
+- (void)asyncSaveOrUpdate:(void(^)(BOOL res))complete;
+- (void)asyncSaveOrUpdateByColumnName:(NSArray*)columnNames AndColumnValue:(NSArray*)columnValues complete:(void(^)(BOOL res))complete;
+- (void)asyncSave:(void(^)(BOOL res))complete;
++ (void)asyncSaveObjects:(NSArray *)array complete:(void(^)(BOOL res))complete;
++ (void)asyncSaveOrUpdateObjects:(NSArray *)array complete:(void(^)(BOOL res))complete;
+- (void)asyncUpdate:(void(^)(BOOL res))complete;
+- (void)asyncUpdateNonEmptyKeyValues:(void(^)(BOOL res))complete;
++ (void)asyncUpdateObjects:(NSArray *)array complete:(void(^)(BOOL res))complete;
+- (void)asyncDeleteObject:(void(^)(BOOL res))complete;
++ (void)asyncDeleteObjects:(NSArray *)array complete:(void(^)(BOOL res))complete;
++ (void)asyncDeleteObjectsByCriteria:(NSString *)criteria complete:(void(^)(BOOL res))complete;
++ (void)asyncFindAll:(void(^)(NSArray *))complete;
++ (void)asyncFindByCriteria:(NSString *)criteria field:(NSArray *)fields complete:(void(^)(NSArray *))complete;
 #pragma mark 必须要重写的方法
 /** 如果子类中有一些property不需要创建数据库字段,或者对字段加修饰属性   具体请参考JDBColumnDes类*/
 + (NSDictionary *)describeColumnDict;
