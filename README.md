@@ -10,5 +10,7 @@ ORM + JSON序列化/反序列化， 二次开发框架，基于FMDB， YYModel
 |- JDBSQLState db语句类 （未完成）
 ```
 # pod
+pod 'JModel'
 # 用法
+#import <JModel/DBModel.h>
 - 继承DBModel即可，具体接口看demo描述
