@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JModel"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "JModel is ORM + JSON序列化/反序列化，二次开发框架，基于FMDB， YYModel"
 
   # This description is used to generate tags and improve search results.
