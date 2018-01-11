@@ -80,8 +80,9 @@ iOS ORM | 序列化 框架，基于 FMDB和YYModel
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-#tag => "1.0" 
-  s.source       = { :git => "https://github.com/sven820/JModel.git", :commit => "7f48b0922fdeefc6d203ab63dc7548eaaabfbf92" }
+#tag => "1.0"
+#commit => "commitstring"
+  s.source       = { :git => "https://github.com/sven820/JModel.git", :tag => "1.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
