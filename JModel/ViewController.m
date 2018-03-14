@@ -50,7 +50,7 @@
 
 //单主键
 - (IBAction)insert:(id)sender {
-    TestDbModel *t = [[TestDbModel alloc]init];
+    SubTestDbModel *t = [[SubTestDbModel alloc]init];
     t.name = @"test_3";
     t.pkId = 102;
     

@@ -9,7 +9,6 @@
 #import <YYModel/YYModel.h>
 
 #import "JDBColumnDes.h"
-#import "JDBSQLState.h"
 
 /** SQLite五种数据类型 */
 #define SQLTEXT     @"TEXT"
@@ -24,8 +23,8 @@ typedef struct{
     BOOL rollback_once_err;
 }JModelConfig;
 /**
- * 1.私有属性不会加入表， 只有.h公开属性会被加入数据表中，父类子类属性均不计入数据库字段
- 在设计model时，可单独设计某个层级model为数据库专用，其它派生通过继承即可
+ * 1.数据库字段与注册的类class或调用的class有关，父类子类属性均不计入数据库字段
+    在设计model时，可单独设计某个层级model为数据库专用，其它派生通过继承即可，注意私有属性也会加入表，请酌情设计db层的model，
  * 2.支持联合主键，具体通过JDBColumnDes描述
  * 3.所有非async开头的方法均为同步，异步请调用async开头的方法
  * 4.所有单个对象操作，都没有作事务操作，对象集合操作都进行了事务操作
@@ -151,6 +150,10 @@ typedef struct{
  * 当前类log控制开关，default yes;
  */
 + (BOOL)logForThisClass;
+/**
+ * 指定数据库表的class
+ */
++ (Class)tableClass;
 #pragma mark 不重要的方法
 /**
  *  获取该类的所有属性

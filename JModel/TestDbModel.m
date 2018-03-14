@@ -8,6 +8,9 @@
 
 #import "TestDbModel.h"
 
+@interface TestDbModel ()
+@property (nonatomic, strong) NSString *private_name;
+@end
 @implementation TestDbModel
 
 #pragma mark - 可选
@@ -40,7 +43,8 @@
     return @"yyyy-MM-dd>> HH:mm:ss";
 }
 @end
-
+@implementation SubTestDbModel
+@end
 
 @implementation Student
 + (NSDictionary *)describeColumnDict

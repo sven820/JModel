@@ -19,4 +19,26 @@
 {
     return 0;
 }
+
++ (Class)tableClass
+{
+    Class cls = self.class;
+    Class supercls = cls.superclass;
+    BOOL end = NO;
+    do {
+        if ([supercls isEqual:[DBModel class]]) {
+            end = YES;
+            break;
+        }
+        if ([supercls isEqual:[NSObject class]]) {
+            end = YES;
+            cls = nil;
+            break;
+        }
+        cls = supercls;
+        supercls = cls.superclass;
+    } while (!end);
+
+    return cls;
+}
 @end

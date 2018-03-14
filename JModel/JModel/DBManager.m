@@ -31,7 +31,6 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *baseDir = paths.firstObject;
     NSString *dataBaseDirectory = [baseDir stringByAppendingPathComponent:@"dataBase"];
-    
 #else
     NSString *appName = [[NSProcessInfo processInfo] processName];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
@@ -79,7 +78,7 @@
                 }
             }
             
-            NSLog(@"db init over");
+            NSLog(@"db init over, db path: %@", self.dbDir);
             dispatch_async(dispatch_get_main_queue(), ^{
                 [[NSNotificationCenter defaultCenter] postNotificationName:DBManagerDbOpenedNotification
                                                                     object:self

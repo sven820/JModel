@@ -20,7 +20,6 @@
 		992544E11FFCAAE6006A5EB4 /* DBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544D51FFCAAE6006A5EB4 /* DBModel.m */; };
 		992544E21FFCAAE6006A5EB4 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544D61FFCAAE6006A5EB4 /* DBHelper.m */; };
 		992544E31FFCAAE6006A5EB4 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544D91FFCAAE6006A5EB4 /* DBManager.m */; };
-		992544E41FFCAAE6006A5EB4 /* JDBSQLState.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544DB1FFCAAE6006A5EB4 /* JDBSQLState.m */; };
 		992544E51FFCAAE6006A5EB4 /* JDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544DC1FFCAAE6006A5EB4 /* JDBModel.m */; };
 		992544E61FFCAAE6006A5EB4 /* JDBColumnDes.m in Sources */ = {isa = PBXBuildFile; fileRef = 992544E01FFCAAE6006A5EB4 /* JDBColumnDes.m */; };
 		992545341FFF2961006A5EB4 /* TestDbModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 992545331FFF2961006A5EB4 /* TestDbModel.m */; };
@@ -73,10 +72,8 @@
 		992544D61FFCAAE6006A5EB4 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
 		992544D71FFCAAE6006A5EB4 /* DBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBModel.h; sourceTree = "<group>"; };
 		992544D91FFCAAE6006A5EB4 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
-		992544DB1FFCAAE6006A5EB4 /* JDBSQLState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBSQLState.m; sourceTree = "<group>"; };
 		992544DC1FFCAAE6006A5EB4 /* JDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBModel.m; sourceTree = "<group>"; };
 		992544DD1FFCAAE6006A5EB4 /* JDBColumnDes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBColumnDes.h; sourceTree = "<group>"; };
-		992544DE1FFCAAE6006A5EB4 /* JDBSQLState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBSQLState.h; sourceTree = "<group>"; };
 		992544DF1FFCAAE6006A5EB4 /* JDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBModel.h; sourceTree = "<group>"; };
 		992544E01FFCAAE6006A5EB4 /* JDBColumnDes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBColumnDes.m; sourceTree = "<group>"; };
 		992545321FFF2961006A5EB4 /* TestDbModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDbModel.h; sourceTree = "<group>"; };
@@ -207,8 +204,6 @@
 		992544DA1FFCAAE6006A5EB4 /* DBModel */ = {
 			isa = PBXGroup;
 			children = (
-				992544DE1FFCAAE6006A5EB4 /* JDBSQLState.h */,
-				992544DB1FFCAAE6006A5EB4 /* JDBSQLState.m */,
 				992544DF1FFCAAE6006A5EB4 /* JDBModel.h */,
 				992544DC1FFCAAE6006A5EB4 /* JDBModel.m */,
 				992544DD1FFCAAE6006A5EB4 /* JDBColumnDes.h */,
@@ -525,7 +520,6 @@
 				992544E51FFCAAE6006A5EB4 /* JDBModel.m in Sources */,
 				992544B01FFC7D54006A5EB4 /* main.m in Sources */,
 				992545341FFF2961006A5EB4 /* TestDbModel.m in Sources */,
-				992544E41FFCAAE6006A5EB4 /* JDBSQLState.m in Sources */,
 				992544E61FFCAAE6006A5EB4 /* JDBColumnDes.m in Sources */,
 				992544A21FFC7D54006A5EB4 /* AppDelegate.m in Sources */,
 			);

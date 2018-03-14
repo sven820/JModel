@@ -32,6 +32,9 @@ typedef NS_ENUM(NSUInteger, DBKind) {
 @property (nonatomic, strong) NSString *nonDbKey;
 @end
 
+@interface SubTestDbModel : TestDbModel
+@end
+
 
 @interface Student : DBModel
 @property (nonatomic, strong) NSString *name;

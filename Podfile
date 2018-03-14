@@ -6,6 +6,7 @@ target 'JModel' do
   # use_frameworks!
 
   # Pods for JModel
+inhibit_all_warnings!
 
   pod 'FMDB', '~> 2.6.2'
   pod 'YYModel', '~> 1.0.4'

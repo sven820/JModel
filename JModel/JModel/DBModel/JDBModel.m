@@ -40,7 +40,6 @@ static JModelConfig conf = {0};
     
     return self;
 }
-
 #pragma mark - base method
 /** 数据库中是否存在表 */
 + (BOOL)isTableExist
@@ -206,6 +205,10 @@ static JModelConfig conf = {0};
 }
 - (BOOL)save
 {
+    if (!self.columeNames.count) {
+        [self.class jdblog:@"table colume empty"];
+        return NO;
+    }
     NSString *tableName = [self tableName];
     NSMutableString *keyString = [NSMutableString string];
     NSMutableString *valueString = [NSMutableString string];
@@ -291,6 +294,10 @@ static JModelConfig conf = {0};
         //无主键不操作
         return res;
     }
+    if (!self.columeNames.count) {
+        [self.class jdblog:@"table colume empty"];
+        return NO;
+    }
     [[self.class getDbqueue] inDatabase:^(FMDatabase *db) {
         NSString *tableName = [self tableName];
         
@@ -332,6 +339,10 @@ static JModelConfig conf = {0};
         //无主键不操作
         return res;
     }
+    if (!self.columeNames.count) {
+        [self.class jdblog:@"table colume empty"];
+        return NO;
+    }
     [[self.class getDbqueue] inDatabase:^(FMDatabase *db) {
         NSString *tableName = [self tableName];
         
@@ -366,6 +377,10 @@ static JModelConfig conf = {0};
 }
 - (BOOL)saveOrUpdateByColumnName:(NSArray*)columnNames AndColumnValue:(NSArray*)columnValues
 {
+    if (!self.columeNames.count) {
+        [self.class jdblog:@"table colume empty"];
+        return NO;
+    }
     NSMutableString *findSql = [NSMutableString stringWithFormat:@"where "];
     for (int i = 0; i < columnNames.count; i++) {
         id cn = columnNames[i];
@@ -758,13 +773,15 @@ static JModelConfig conf = {0};
     NSMutableArray *proNames = [NSMutableArray array];
     NSMutableArray *proTypes = [NSMutableArray array];
     NSArray *theTransients = [[self class] transients];
+    NSArray *filter = @[@"superclass", @"description", @"debugDescription", @"hash"];
+
     unsigned int outCount, i;
-    objc_property_t *properties = class_copyPropertyList([self class], &outCount);
+    objc_property_t *properties = class_copyPropertyList([self tableClass], &outCount);
     for (i = 0; i < outCount; i++) {
         objc_property_t property = properties[i];
         //获取属性名
         NSString *propertyName = [NSString stringWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
-        if ([theTransients containsObject:propertyName]) {
+        if ([theTransients containsObject:propertyName] || [filter containsObject:propertyName]) {
             continue;
         }
         [proNames addObject:propertyName];
@@ -980,6 +997,10 @@ static JModelConfig conf = {0};
 + (BOOL)logForThisClass
 {
     return YES;
+}
++ (Class)tableClass
+{
+    return self.class;
 }
 #pragma mark - private
 + (void)jdblog:(NSString *)format, ...
